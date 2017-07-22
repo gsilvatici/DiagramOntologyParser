@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DiagramOntologyParser
 
 This program takes a Camunda BPM diagram and translates it to a ontology.
@@ -23,3 +24,7 @@ Gabriel Silvatici.
 
 
 
+=======
+# DiagramOntologyParser
+This program takes a Camunda BPM diagram and translates it to a ontology.
+>>>>>>> 92053059a0de11b96acb0ac98df78b8e6c040f8e
