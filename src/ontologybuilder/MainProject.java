@@ -55,7 +55,7 @@ public class MainProject implements ActionListener{
         
         //creating a input panel
         input = new JPanel();
-        input.setPreferredSize(new Dimension(500,800));
+        input.setPreferredSize(new Dimension(350,800));
         input.setBackground(Color.LIGHT_GRAY);
         input.setVisible(true);
         areaPanel.add(input);

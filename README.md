@@ -10,10 +10,9 @@ the translated ontologies will be displayed on the "generated ontologies" sectio
 
 ## Considerations
 
-The goal of the software is to generate ontologies (owl files) from bpm files, so for reasoning and querying the generated ontolgies
-it must make use of utilities like Protege.
+The goal of the software is to generate ontologies (owl files) from bpm files, so for reasoning and querying the generated ontologies
+it must make use of utilities like Protégé.
 
-======================================================================================================================================
 ## Author
 
 Gabriel Silvatici.
