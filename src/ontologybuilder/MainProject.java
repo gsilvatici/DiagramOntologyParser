@@ -55,13 +55,13 @@ public class MainProject implements ActionListener{
         
         //creating a input panel
         input = new JPanel();
-        input.setPreferredSize(new Dimension(200,400));
+        input.setPreferredSize(new Dimension(500,800));
         input.setBackground(Color.LIGHT_GRAY);
         input.setVisible(true);
         areaPanel.add(input);
 
         //setting labels
-        JLabel in_lb = new JLabel("Input");
+        JLabel in_lb = new JLabel("Generated Ontologies");
         in_lb.setFont(font);
         in_lb.setBorder(BorderFactory.createEmptyBorder(8, 200, 10, 190));
         in_lb.setForeground(Color.WHITE);

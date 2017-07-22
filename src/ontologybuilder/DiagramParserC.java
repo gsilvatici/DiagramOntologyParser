@@ -81,10 +81,7 @@ public class DiagramParserC {
 			Set<OWLClassExpression> expressionList = new HashSet<OWLClassExpression>();
 			expressionList.add(owlStartClass);
 			for (ModelElementInstance startNode: mainStartInstances) {
-							
-				System.out.println(startNode.getAttributeValue("name"));
 				OWLClassExpression nextNode = parseNextNode(process, start, startNode, modelInstance, dataFactory, prefixManager, owlOntologyManager, currentOntology, 1, subIndex);		
-				
 				expressionList.add(nextNode);										
 			}	
 			
@@ -432,7 +429,6 @@ public class DiagramParserC {
 					i++;
 				}
 				suffix += i - 1;
-				System.out.println(suffix);
 			} else {
 				ret = true;
 			}
@@ -589,10 +585,7 @@ public class DiagramParserC {
 			Set<OWLClassExpression> expressionList = new HashSet<OWLClassExpression>();
 			expressionList.add(owlStartClass);
 			for (ModelElementInstance startNode: mainStartInstances) {
-							
-				System.out.println(startNode.getAttributeValue("name"));
 				OWLClassExpression nextNode = parseNextNode(process, start, startNode, modelInstance, dataFactory, prefixManager, owlOntologyManager, currentOntology, subIndexCount, subIndex);		
-				
 				expressionList.add(nextNode);										
 			}	
 			
@@ -794,7 +787,6 @@ public class DiagramParserC {
 		IRI xIRI = IRI.create(prefixManager.getDefaultPrefix() + "#x");
 		IRI yIRI = IRI.create(prefixManager.getDefaultPrefix() + "#y");
 		IRI zIRI = IRI.create(prefixManager.getDefaultPrefix() + "#z");
-		System.out.println(xIRI);
 		SWRLIArgument x = dataFactory.getSWRLVariable(xIRI);
 		SWRLIArgument y = dataFactory.getSWRLVariable(yIRI);
 		SWRLIArgument z = dataFactory.getSWRLVariable(zIRI);

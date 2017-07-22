@@ -1,16 +1,12 @@
-<<<<<<< HEAD
+
 # DiagramOntologyParser
 
 This program takes a Camunda BPM diagram and translates it to a ontology.
-
-======================================================================================================================================
 
 ## Usage
 
 Run the .jar file, the program will display a button to select a camunda bpm file to translate ta a ontology,
 the translated ontologies will be displayed on the "generated ontologies" section in the middle of the screen.
-
-======================================================================================================================================
 
 ## Considerations
 
@@ -21,10 +17,3 @@ it must make use of utilities like Protege.
 ## Author
 
 Gabriel Silvatici.
-
-
-
-=======
-# DiagramOntologyParser
-This program takes a Camunda BPM diagram and translates it to a ontology.
->>>>>>> 92053059a0de11b96acb0ac98df78b8e6c040f8e
