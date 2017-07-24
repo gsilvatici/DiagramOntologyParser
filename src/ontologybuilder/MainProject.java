@@ -7,18 +7,25 @@ import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 import javax.swing.*;
 
+import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
 
 
 public class MainProject implements ActionListener{
-    private JFrame mainWindow;
-    private JPanel iconPanel;
-    private JPanel areaPanel;
-    private JButton select_file;
+	ArrayList<OWLOntology> ontologies;
+	OntologyMerger om; 
+    JFrame mainWindow;
+    JPanel iconPanel;
+    JPanel areaPanel;
+    JButton select_file;
+    ArrayList<JButton> process;
     JPanel input;
     Font font= new Font("Lucida Console", Font.PLAIN, 20);
     public void createMainWindow(){
@@ -46,6 +53,8 @@ public class MainProject implements ActionListener{
         select_file.setBackground(new Color(175, 175, 175));
         iconPanel.add(select_file);
 
+        ontologies = new ArrayList<>();
+        process = new ArrayList<>();
         select_file.addActionListener(this);
     }
     public void createActivity(){
@@ -61,7 +70,7 @@ public class MainProject implements ActionListener{
         areaPanel.add(input);
 
         //setting labels
-        JLabel in_lb = new JLabel("Generated Ontologies");
+        JLabel in_lb = new JLabel("Generated Ontology");
         in_lb.setFont(font);
         in_lb.setBorder(BorderFactory.createEmptyBorder(8, 200, 10, 190));
         in_lb.setForeground(Color.WHITE);
@@ -85,6 +94,27 @@ public class MainProject implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent ae) {
 
+
+        if(process.contains(ae.getSource())){
+        	int index = process.indexOf(ae.getSource());
+
+        	process.remove(index);
+        	ontologies.remove(index);
+
+
+			try {
+				om = new OntologyMerger(ontologies, "prueba");
+			} catch (OWLOntologyStorageException | IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+        	input.remove((JButton)ae.getSource());
+        	
+            input.revalidate();
+            input.repaint();
+        }
+    	
         if(ae.getSource() == select_file){
             JFileChooser chooser = new JFileChooser();
 
@@ -104,6 +134,7 @@ public class MainProject implements ActionListener{
             btn.setPreferredSize(new Dimension(200,40));
             btn.setBorder(BorderFactory.createLoweredSoftBevelBorder());
             btn.addActionListener(this);
+            process.add(btn);
             input.add(btn);
             
             btn.addActionListener(new ActionListener() {
@@ -118,12 +149,15 @@ public class MainProject implements ActionListener{
             input.revalidate();
             input.repaint();
             
+            
             DiagramParserC dp = new DiagramParserC();
             try {
-				dp.owlFileGenerator(proyectPath, projectname);
+				ontologies.add(dp.owlFileGenerator(proyectPath, projectname));
+				om = new OntologyMerger(ontologies, "prueba");
 			} catch (OWLOntologyCreationException | OWLOntologyStorageException | IOException e) {
 				System.out.println("System exception: unreachable file path");
 			}
+
             
         }    
 

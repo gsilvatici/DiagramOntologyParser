@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1500730508526" name="file:/C:/Users/gabri/Workspace/CamundaParser/diagram_1.bpmn.owl" uri="diagram_1.bpmn.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1500872286992" name="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.bpmn.owl" uri="MaintenanceProcess2.bpmn.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1500872286992" name="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess3.bpmn.owl" uri="MaintenanceProcess3.bpmn.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1500872286992" name="file:/C:/Users/gabri/Workspace/CamundaParser/prueba.owl" uri="prueba.owl"/>
     </group>
 </catalog>

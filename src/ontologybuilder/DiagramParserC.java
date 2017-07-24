@@ -474,6 +474,7 @@ public class DiagramParserC {
 	        assertion = dataFactory.getOWLObjectPropertyAssertionAxiom(followedBy, precededIndividual, task);
 	        owlOntologyManager.applyChange(new AddAxiom(currentOntology, assertion));
 		} else {
+			subProcessNode = true;
 			// Instantiate the individual of the subprocess
 			String taskNameLower = taskName.substring(0, 1).toLowerCase() + taskName.substring(1) + "Process";
 			task = dataFactory.getOWLNamedIndividual("#" + taskNameLower, prefixManager);
@@ -842,13 +843,12 @@ public class DiagramParserC {
 		rule = dataFactory.getSWRLRule(body, head);
 		
 		owlOntologyManager.applyChange(new AddAxiom(currentOntology, rule));
-
 	}
 
-	public void owlFileGenerator(String proyectPath, String projectname)
+	public OWLOntology owlFileGenerator(String proyectPath, String projectname)
 			throws OWLOntologyCreationException, IOException, OWLOntologyStorageException {
 		
-		this.projectname = projectname;
+		this.projectname = projectname.substring(0, projectname.lastIndexOf("."));
 		this.proyectPath = proyectPath;
 		
 		// Create a new empty Owl file in appropriate directory
@@ -886,8 +886,8 @@ public class DiagramParserC {
 		extractOntologyFromDiagram(dataFactory, prefixManager, owlOntologyManager, currentOntology);
 		
 		owlOntologyManager.saveOntology(currentOntology);
+		
+		return currentOntology;
 
 	}
-
-
 }
