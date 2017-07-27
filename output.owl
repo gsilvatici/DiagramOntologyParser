@@ -1,0 +1,1616 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#"
+     xml:base="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl"
+     xmlns:output="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#string -->
+
+    <rdfs:Datatype rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#string"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ContainedIn -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ContainedIn">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ContainedInTran"/>
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ContainedInTran -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ContainedInTran">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Contains -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Contains">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ContainsTran"/>
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Contains0 -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Contains0">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Contains"/>
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Contains0.0 -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Contains0.0">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Contains"/>
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ContainsTran -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ContainsTran">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#beginsWith -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#beginsWith">
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#beginsWith0 -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#beginsWith0">
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#beginsWith"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#beginsWith0.0 -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#beginsWith0.0">
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#beginsWith"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#endsWith -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#endsWith">
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#endsWith0 -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#endsWith0">
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#endsWith"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#endsWith0.0 -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#endsWith0.0">
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#endsWith"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy">
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedByTran"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0 -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0">
+        <rdfs:domain rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0.0 -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0.0">
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedByTran -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedByTran">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#pairsWith -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#pairsWith">
+        <rdfs:range rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#string"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptActivity -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptActivity"/>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptCleanComponent -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptCleanComponent">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptDeclareFitness -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptDeclareFitness">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInspectComponent -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInspectComponent">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInstallComponent -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInstallComponent">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRemoveComponent -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRemoveComponent">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRepairComponent -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRepairComponent">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptReuseComponent -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptReuseComponent">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptTestComponent -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptTestComponent">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#End -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#End">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#InspectComponentProcess -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#InspectComponentProcess">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Start"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0.0"/>
+                        <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptTestComponent*"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Start"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0.0"/>
+                        <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptTestComponent**"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Join -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Join">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1 -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Start"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0"/>
+                        <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRemoveComponent**"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2 -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Start"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0"/>
+                        <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRemoveComponent*"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Nothing -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Nothing"/>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Start -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Start">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptCleanComponent* -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptCleanComponent*">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0"/>
+                                <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInstallComponent*"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#pairsWith"/>
+                                <owl:someValuesFrom rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#string"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptCleanComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptCleanComponent** -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptCleanComponent**">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0"/>
+                        <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInspectComponent**"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptCleanComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptDeclareFitness* -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptDeclareFitness*">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0.0"/>
+                        <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#End"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptDeclareFitness"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptDeclareFitness** -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptDeclareFitness**">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0.0"/>
+                        <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#End"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptDeclareFitness"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInspectComponent* -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInspectComponent*">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#InspectComponentProcess"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0"/>
+                                <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInstallComponent*"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#pairsWith"/>
+                                <owl:someValuesFrom rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#string"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInspectComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInspectComponent** -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInspectComponent**">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#InspectComponentProcess"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0"/>
+                        <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInstallComponent**"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInspectComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInstallComponent* -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInstallComponent*">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0"/>
+                        <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#End"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInstallComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInstallComponent** -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInstallComponent**">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0"/>
+                        <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#End"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInstallComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRemoveComponent* -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRemoveComponent*">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0"/>
+                                <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptCleanComponent*"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0"/>
+                                <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptInspectComponent*"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRemoveComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRemoveComponent** -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRemoveComponent**">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0"/>
+                        <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptCleanComponent**"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRemoveComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRepairComponent* -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRepairComponent*">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0.0"/>
+                                <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptDeclareFitness*"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#pairsWith"/>
+                                <owl:someValuesFrom rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#string"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRepairComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRepairComponent** -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRepairComponent**">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0.0"/>
+                                <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptDeclareFitness**"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#pairsWith"/>
+                                <owl:someValuesFrom rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#string"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRepairComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptReuseComponent* -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptReuseComponent*">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0.0"/>
+                                <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptDeclareFitness*"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#pairsWith"/>
+                                <owl:someValuesFrom rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#string"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptReuseComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptReuseComponent** -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptReuseComponent**">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0.0"/>
+                                <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptDeclareFitness**"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#pairsWith"/>
+                                <owl:someValuesFrom rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#string"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptReuseComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptTestComponent* -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptTestComponent*">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0.0"/>
+                                <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRepairComponent*"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0.0"/>
+                                <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptReuseComponent*"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptTestComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptTestComponent** -->
+
+    <owl:Class rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptTestComponent**">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0.0"/>
+                                <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptRepairComponent**"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy0.0"/>
+                                <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptReuseComponent**"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ConceptTestComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#cleanComponent -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#cleanComponent">
+        <rdf:type rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+        <pairsWith rdf:datatype="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#string"></pairsWith>
+        <followedBy0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#inspectComponentProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#declareFitness -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#declareFitness">
+        <rdf:type rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+        <followedBy0.0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#end0.0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#end0 -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#end0">
+        <rdf:type rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#End"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#end0.0 -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#end0.0">
+        <rdf:type rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#End"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#inspectComponentProcess -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#inspectComponentProcess">
+        <rdf:type rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#InspectComponentProcess"/>
+        <pairsWith rdf:datatype="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#string"></pairsWith>
+        <Contains0.0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#declareFitness"/>
+        <endsWith0.0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#end0.0"/>
+        <followedBy0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#installComponent"/>
+        <Contains0.0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#repairComponent"/>
+        <Contains0.0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#reuseComponent"/>
+        <beginsWith0.0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#start0.0"/>
+        <Contains0.0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#testComponent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#installComponent -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#installComponent">
+        <rdf:type rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+        <followedBy0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#end0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#maintenanceProcess1Process -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#maintenanceProcess1Process">
+        <rdf:type rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess1"/>
+        <Contains0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#cleanComponent"/>
+        <endsWith0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#end0"/>
+        <Contains0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#inspectComponentProcess"/>
+        <Contains0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#installComponent"/>
+        <Contains0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#removeComponent"/>
+        <beginsWith0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#start0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#maintenanceProcess2Process -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#maintenanceProcess2Process">
+        <rdf:type rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#MaintenanceProcess2"/>
+        <Contains0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#cleanComponent"/>
+        <endsWith0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#end0"/>
+        <Contains0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#inspectComponentProcess"/>
+        <Contains0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#installComponent"/>
+        <Contains0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#removeComponent"/>
+        <beginsWith0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#start0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#removeComponent -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#removeComponent">
+        <rdf:type rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+        <followedBy0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#cleanComponent"/>
+        <followedBy0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#inspectComponentProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#repairComponent -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#repairComponent">
+        <rdf:type rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+        <pairsWith rdf:datatype="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#string">faulty</pairsWith>
+        <followedBy0.0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#declareFitness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#reuseComponent -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#reuseComponent">
+        <rdf:type rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+        <pairsWith rdf:datatype="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#string">not faulty</pairsWith>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#start0 -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#start0">
+        <rdf:type rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Start"/>
+        <followedBy0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#removeComponent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#start0.0 -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#start0.0">
+        <followedBy0.0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#testComponent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#testComponent -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#testComponent">
+        <rdf:type rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+        <followedBy0.0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#repairComponent"/>
+        <followedBy0.0 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#reuseComponent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#End"/>
+            <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Join"/>
+            <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Start"/>
+            <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Task"/>
+        </owl:members>
+    </rdf:Description>
+    <owl:Class>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Nothing"/>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy"/>
+                <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Start"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:intersectionOf>
+    </owl:Class>
+    <owl:Class>
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Nothing"/>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#End"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy"/>
+                <owl:onClass rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:intersectionOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
+                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ContainedIn"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
+                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
+                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Contains"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
+                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
+                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
+                        <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
+                                                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
+                                                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
+                                                <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
+                                                <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#beginsWith"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
+                                        <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
+                                <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
+                                <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
+                                        <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
+                                                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
+                                                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
+                                                <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
+                                                <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#endsWith"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
+                        <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
+                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#x"/>
+                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#z"/>
+                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#x"/>
+                        <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#z"/>
+                                <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#x"/>
+                                                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#y"/>
+                                                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#y"/>
+                                                <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#z"/>
+                                                <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#beginsWith"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#y"/>
+                                        <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#x"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#y"/>
+                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#ContainedIn"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#x"/>
+                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#y"/>
+                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Contains"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#x"/>
+                        <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#z"/>
+                                <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#Node"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#y"/>
+                                                <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#z"/>
+                                                <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#endsWith"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#x"/>
+                                                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#y"/>
+                                                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#y"/>
+                                        <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#SubProcess"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#x"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess2.owl#z"/>
+                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/output.owl#followedBy"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.4) http://owlapi.sourceforge.net -->
+

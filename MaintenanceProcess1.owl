@@ -724,15 +724,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#End"/>
-            <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#Join"/>
-            <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#Start"/>
-            <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#Task"/>
-        </owl:members>
-    </rdf:Description>
     <owl:Class>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
         <owl:intersectionOf rdf:parseType="Collection">
@@ -755,6 +746,15 @@
             </owl:Restriction>
         </owl:intersectionOf>
     </owl:Class>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#End"/>
+            <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#Join"/>
+            <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#Start"/>
+            <rdf:Description rdf:about="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#Task"/>
+        </owl:members>
+    </rdf:Description>
     
 
 
@@ -777,20 +777,6 @@
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#Contains"/>
-                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
-                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
-                    </rdf:Description>
-                </rdf:first>
-            </rdf:Description>
-        </swrl:body>
         <swrl:head>
             <rdf:Description>
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
@@ -805,42 +791,50 @@
                 </rdf:first>
             </rdf:Description>
         </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:head>
+        <swrl:body>
             <rdf:Description>
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#followedBy"/>
-                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
-                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
+                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#Contains"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
+                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
                     </rdf:Description>
                 </rdf:first>
             </rdf:Description>
-        </swrl:head>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#Node"/>
-                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
-                    </rdf:Description>
-                </rdf:first>
                 <rdf:rest>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#SubProcess"/>
+                                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
                                 <rdf:rest>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#endsWith"/>
+                                                <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
+                                                <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
                                         <rdf:rest>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
@@ -855,96 +849,8 @@
                                                 </rdf:first>
                                             </rdf:Description>
                                         </rdf:rest>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#endsWith"/>
-                                                <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
-                                                <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
-                                            </rdf:Description>
-                                        </rdf:first>
                                     </rdf:Description>
                                 </rdf:rest>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#SubProcess"/>
-                                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                            </rdf:Description>
-                        </rdf:rest>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#Node"/>
-                                <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
-                            </rdf:Description>
-                        </rdf:first>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#followedBy"/>
-                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
-                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
-                    </rdf:Description>
-                </rdf:first>
-            </rdf:Description>
-        </swrl:head>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#followedBy"/>
-                                                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
-                                                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#beginsWith"/>
-                                                <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
-                                                <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                    </rdf:Description>
-                                </rdf:rest>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#SubProcess"/>
-                                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
-                                    </rdf:Description>
-                                </rdf:first>
                             </rdf:Description>
                         </rdf:rest>
                         <rdf:first>
@@ -965,6 +871,100 @@
                 </rdf:first>
             </rdf:Description>
         </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#followedBy"/>
+                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#Node"/>
+                                <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#SubProcess"/>
+                                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#beginsWith"/>
+                                                <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
+                                                <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#followedBy"/>
+                                                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
+                                                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#y"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#Node"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#followedBy"/>
+                        <swrl:argument1 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#x"/>
+                        <swrl:argument2 rdf:resource="file:/C:/Users/gabri/Workspace/CamundaParser/MaintenanceProcess1.owl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
 </rdf:RDF>
 
