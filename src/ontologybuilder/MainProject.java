@@ -20,7 +20,6 @@ import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
 public class MainProject implements ActionListener{
 	ArrayList<OWLOntology> ontologies;
-    private JButton select_dir;
 	OntologyMerger om;
     JFrame mainWindow;
     JPanel iconPanel;
@@ -53,19 +52,10 @@ public class MainProject implements ActionListener{
         select_file.setEnabled(true);
         select_file.setBackground(new Color(175, 175, 175));
         iconPanel.add(select_file);
-        
-        //choose file button
-        select_dir = new JButton("Select BPMN Influx file");
-        select_dir.setVisible(true);
-        select_dir.setEnabled(true);
-        select_dir.setBackground(new Color(175, 175, 175));
-        iconPanel.add(select_dir);
 
         ontologies = new ArrayList<>();
         process = new ArrayList<>();
         
-
-        select_dir.addActionListener(this);
         select_file.addActionListener(this);
     }
     public void createActivity(){
@@ -162,7 +152,8 @@ public class MainProject implements ActionListener{
             DiagramParserC dp = new DiagramParserC();
             try {
 				ontologies.add(dp.owlFileGenerator(proyectPath, projectname));
-				om = new OntologyMerger(ontologies, "output");
+				//this is for generating and "output.owl" with merged ontologies
+//				om = new OntologyMerger(ontologies, "output");
 			} catch (OWLOntologyCreationException | OWLOntologyStorageException | IOException e) {
 				System.out.println("System exception: unreachable file path");
 			}           
